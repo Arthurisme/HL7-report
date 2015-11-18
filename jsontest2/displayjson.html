@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display JSON data</title>
+</head>
+<body>
+<div id="description">The JSON piece that return:</div>
+<div id="results">Json data here</div>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+    function writeToDom(title, content) {
+        $("#results").html("<div class='header'>" + title + ":</div><div><pre>" + content + "</pre></div>");
+    }
+
+
+    $(document).ready(function(){
+        $.post("json.test.js",
+                function(data){
+                    var obj=jQuery.parseJSON(data);
+//                    $("#results2").html( JSON.stringify(obj,null,4) );
+                    writeToDom('Formatted', JSON.stringify(obj, null, 4));
+
+//                    for(var i=0;i<obj.length;i++){
+//                        $("#results").append("Linux ID: "+obj[i].LinuxID).hide().fadeIn(500);
+//                        $("#results").append("<br>Linux Distribution: "+obj[i].LinuxDist).hide().fadeIn(500);
+//                        $("#results").append("<br>Company: "+obj[i].Company).hide().fadeIn(500);
+//                        $("#results").append("<br><hr>").hide().fadeIn(500);
+//                    }
+                });
+    });
+</script>
+</html>

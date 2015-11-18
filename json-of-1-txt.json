@@ -1,0 +1,717 @@
+{
+  "ORU_R01": {
+    "@xmlns": "urn:hl7-org:v2xml",
+    "MSH": {
+      "MSH.1": "|",
+      "MSH.2": "^~\\&",
+      "MSH.3": {
+        "HD.1": "FOXLAB-BIRON",
+        "HD.2": "2.16.124.10.101.1.60.1.16.2050.1",
+        "HD.3": "ISO"
+      },
+      "MSH.4": {
+        "HD.1": "1000156552",
+        "HD.2": "2.16.840.1.113883.4.273",
+        "HD.3": "ISO"
+      },
+      "MSH.5": {
+        "HD.1": "0301",
+        "HD.2": "2.16.124.10.101.1.60.6.24",
+        "HD.3": "ISO"
+      },
+      "MSH.7": {
+        "TS.1": "20151112084920-0500"
+      },
+      "MSH.9": {
+        "MSG.1": "ORU",
+        "MSG.2": "R01",
+        "MSG.3": "ORU_R01"
+      },
+      "MSH.10": "FOXLAB-BIRON-4296550-20151112084920",
+      "MSH.11": {
+        "PT.1": "P",
+        "PT.2": "T"
+      },
+      "MSH.12": {
+        "VID.1": "2.5.1"
+      },
+      "MSH.15": "NE",
+      "MSH.18": "UNICODE UTF-8",
+      "MSH.19": {
+        "CE.1": "fr-CA"
+      }
+    },
+    "SFT": {
+      "SFT.2": "FOXLAB vDSQ-1.0",
+      "SFT.3": "LABORATOIRE MÉDICAL BIRON",
+      "SFT.4": "2.16.124.10.101.1.60.1.16.2050.2",
+      "SFT.6": {
+        "TS.1": "20150519"
+      }
+    },
+    "ORU_R01.PATIENT_RESULT": [
+      {
+        "ORU_R01.PATIENT": {
+          "PID": {
+            "PID.1": "1",
+            "PID.3": {
+              "CX.1": "P0059257",
+              "CX.4": {
+                "HD.1": "FOXLAB-BIRON",
+                "HD.2": "2.16.124.10.101.1.60.1.16.2050.1.3",
+                "HD.3": "ISO"
+              }
+            },
+            "PID.5": {
+              "XPN.1": {
+                "FN.1": "Curie"
+              },
+              "XPN.2": "Marie",
+              "XPN.7": "L"
+            },
+            "PID.7": {
+              "TS.1": "19470102"
+            },
+            "PID.8": "F"
+          },
+          "NTE": {
+            "NTE.1": "1",
+            "NTE.2": "L",
+            "NTE.3": "Prélevé par papillon"
+          },
+          "ORU_R01.VISIT": null
+        },
+        "ORU_R01.ORDER_OBSERVATION": [
+          {
+            "ORC": {
+              "ORC.1": "RE",
+              "ORC.4": {
+                "EI.1": "4296550",
+                "EI.2": "FOXLAB-BIRON",
+                "EI.3": "2.16.124.10.101.1.60.1.16.2050.1",
+                "EI.4": "ISO"
+              },
+              "ORC.5": "CM",
+              "ORC.7": {
+                "TQ.4": {
+                  "TS.1": "20140811083000-0400"
+                },
+                "TQ.6": "S"
+              },
+              "ORC.9": {
+                "TS.1": "20140811132507-0400"
+              },
+              "ORC.12": {
+                "XCN.1": "00001",
+                "XCN.2": {
+                  "FN.1": "Anticoagulant, Pharmacie"
+                },
+                "XCN.9": {
+                  "HD.1": "00001",
+                  "HD.2": "2.16.840.1.113883.4.298",
+                  "HD.3": "ISO"
+                },
+                "XCN.14": {
+                  "HD.1": "FOXLAB-BIRON",
+                  "HD.2": "2.16.124.10.101.1.60.1.16.2050.1.2",
+                  "HD.3": "ISO"
+                }
+              },
+              "ORC.15": {
+                "TS.1": "20140811115352-0400"
+              },
+              "ORC.21": {
+                "XON.1": "Cité de la Santé de Laval",
+                "XON.6": {
+                  "HD.1": "C01039",
+                  "HD.2": "2.16.124.10.101.1.60.1.16.2050.1.5",
+                  "HD.3": "ISO"
+                }
+              }
+            },
+            "OBR": {
+              "OBR.1": "1",
+              "OBR.3": {
+                "EI.1": "46902396",
+                "EI.2": "FOXLAB-BIRON",
+                "EI.3": "2.16.124.10.101.1.60.1.16.2050.1",
+                "EI.4": "ISO"
+              },
+              "OBR.4": {
+                "CE.1": "2000",
+                "CE.2": "Formule sanguine",
+                "CE.3": "L"
+              },
+              "OBR.7": {
+                "TS.1": "20140811083000-0400"
+              },
+              "OBR.11": "L",
+              "OBR.14": {
+                "TS.1": "20140811115351-0400"
+              },
+              "OBR.15": {
+                "SPS.1": {
+                  "CWE.1": "1016",
+                  "CWE.2": "Sang total",
+                  "CWE.3": "L"
+                }
+              },
+              "OBR.22": {
+                "TS.1": "20140811132507-0400"
+              },
+              "OBR.25": "F"
+            },
+            "ORU_R01.TIMING_QTY": null,
+            "ORU_R01.OBSERVATION": [
+              {
+                "OBX": {
+                  "OBX.1": "1",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "GB",
+                    "CE.2": "Globules blancs",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "8.7",
+                  "OBX.6": {
+                    "CE.1": "10*9/L"
+                  },
+                  "OBX.7": "4.0 - 10.0",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "2",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "GR",
+                    "CE.2": "Globules rouges",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "3.99",
+                  "OBX.6": {
+                    "CE.1": "10*12/L"
+                  },
+                  "OBX.7": "3.80 - 5.40",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "3",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "HGB",
+                    "CE.2": "Hémoglobine",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "110",
+                  "OBX.6": {
+                    "CE.1": "g/L"
+                  },
+                  "OBX.7": "120 - 155",
+                  "OBX.8": "L",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "4",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "HCT",
+                    "CE.2": "Hématocrite",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.342",
+                  "OBX.6": {
+                    "CE.1": "L/L"
+                  },
+                  "OBX.7": "0.350 - 0.470",
+                  "OBX.8": "L",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "5",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "VGM",
+                    "CE.2": "VGM",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "85.7",
+                  "OBX.6": {
+                    "CE.1": "fL"
+                  },
+                  "OBX.7": "80.0 - 100.0",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "6",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "TGMH",
+                    "CE.2": "TGMH",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "27.6",
+                  "OBX.6": {
+                    "CE.1": "pg"
+                  },
+                  "OBX.7": "27.0 - 34.0",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "7",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "CGMH",
+                    "CE.2": "CGMH",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "322",
+                  "OBX.6": {
+                    "CE.1": "g/L"
+                  },
+                  "OBX.7": "320 - 360",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "8",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "DVE",
+                    "CE.2": "DVE",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "20.3",
+                  "OBX.6": {
+                    "CE.1": "%"
+                  },
+                  "OBX.7": "11.5 - 14.5",
+                  "OBX.8": "H",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "9",
+                  "OBX.2": "ST",
+                  "OBX.3": {
+                    "CE.1": "ROUL",
+                    "CE.2": "Rouleaux",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "1+",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "10",
+                  "OBX.2": "ST",
+                  "OBX.3": {
+                    "CE.1": "ACY",
+                    "CE.2": "Anisocytose",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "3+",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "11",
+                  "OBX.2": "ST",
+                  "OBX.3": {
+                    "CE.1": "CODO",
+                    "CE.2": "Codocytes",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "Occasionnel",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "12",
+                  "OBX.2": "ST",
+                  "OBX.3": {
+                    "CE.1": "DACRY",
+                    "CE.2": "Dacryocytes",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "Occasionnel",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "13",
+                  "OBX.2": "ST",
+                  "OBX.3": {
+                    "CE.1": "SPHE",
+                    "CE.2": "Sphérocytes",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "Occasionnel",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "14",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "PLT",
+                    "CE.2": "Plaquettes",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "366",
+                  "OBX.6": {
+                    "CE.1": "10*9/L"
+                  },
+                  "OBX.7": "140 - 500",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "15",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "VPM",
+                    "CE.2": "VPM",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "8.4",
+                  "OBX.6": {
+                    "CE.1": "fL"
+                  },
+                  "OBX.7": "7.4 - 12.0",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "16",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "NE%",
+                    "CE.2": "Neutrophiles (ratio)",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.782",
+                  "OBX.7": "0.350 - 0.750",
+                  "OBX.8": "H",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "17",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "LY%",
+                    "CE.2": "Lymphocytes (ratio)",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.144",
+                  "OBX.7": "0.250 - 0.400",
+                  "OBX.8": "L",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "18",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "MO%",
+                    "CE.2": "Monocytes (ratio)",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.045",
+                  "OBX.7": "0.000 - 0.120",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "19",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "EO%",
+                    "CE.2": "Eosinophiles (ratio)",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.022",
+                  "OBX.7": "0.000 - 0.070",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "20",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "BA%",
+                    "CE.2": "Basophiles (ratio)",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.007",
+                  "OBX.7": "0.000 - 0.030",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "21",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "NE#",
+                    "CE.2": "Neutrophiles #",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "6.8",
+                  "OBX.6": {
+                    "CE.1": "10*9/L"
+                  },
+                  "OBX.7": "1.4 - 7.5",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "22",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "LY#",
+                    "CE.2": "Lymphocytes #",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "1.2",
+                  "OBX.6": {
+                    "CE.1": "10*9/L"
+                  },
+                  "OBX.7": "1.0 - 4.0",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "23",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "MO#",
+                    "CE.2": "Monocytes #",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.4",
+                  "OBX.6": {
+                    "CE.1": "10*9/L"
+                  },
+                  "OBX.7": "0.0 - 1.2",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "24",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "EO#",
+                    "CE.2": "Eosinophiles #",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.2",
+                  "OBX.6": {
+                    "CE.1": "10*9/L"
+                  },
+                  "OBX.7": "0.0 - 0.7",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              },
+              {
+                "OBX": {
+                  "OBX.1": "25",
+                  "OBX.2": "NM",
+                  "OBX.3": {
+                    "CE.1": "BA#",
+                    "CE.2": "Basophiles #",
+                    "CE.3": "L"
+                  },
+                  "OBX.5": "0.1",
+                  "OBX.6": {
+                    "CE.1": "10*9/L"
+                  },
+                  "OBX.7": "0.0 - 0.3",
+                  "OBX.11": "F",
+                  "OBX.13": "ELE"
+                }
+              }
+            ],
+            "ORU_R01.SPECIMEN": null
+          },
+          {
+            "OBR": {
+              "OBR.1": "2",
+              "OBR.3": {
+                "EI.1": "46902417",
+                "EI.2": "FOXLAB-BIRON",
+                "EI.3": "2.16.124.10.101.1.60.1.16.2050.1",
+                "EI.4": "ISO"
+              },
+              "OBR.4": {
+                "CE.1": "2650",
+                "CE.2": "PT INR",
+                "CE.3": "L"
+              },
+              "OBR.7": {
+                "TS.1": "20140811083000-0400"
+              },
+              "OBR.11": "L",
+              "OBR.14": {
+                "TS.1": "20140811115351-0400"
+              },
+              "OBR.15": {
+                "SPS.1": {
+                  "CWE.1": "1016",
+                  "CWE.2": "Sang total",
+                  "CWE.3": "L"
+                }
+              },
+              "OBR.22": {
+                "TS.1": "20140811125005-0400"
+              },
+              "OBR.25": "F"
+            },
+            "ORU_R01.TIMING_QTY": null,
+            "ORU_R01.OBSERVATION": {
+              "OBX": {
+                "OBX.1": "1",
+                "OBX.2": "NM",
+                "OBX.3": {
+                  "CE.1": "2650",
+                  "CE.2": "PT INR",
+                  "CE.3": "L"
+                },
+                "OBX.5": "1.87",
+                "OBX.6": {
+                  "CE.1": "INR"
+                },
+                "OBX.7": "0.90 - 1.20",
+                "OBX.8": "H",
+                "OBX.11": "F",
+                "OBX.13": "ELE"
+              },
+              "NTE": [
+                {
+                  "NTE.1": "1",
+                  "NTE.2": "L",
+                  "NTE.3": [
+                    "Valeurs de référence pour patients anticoagulés au coumadin.",
+                    "Traitements et prévention",
+                    "des thromboembolies veineuses: 2.0-3.0",
+                    "Préventions des embolies systémiques: 2.0-3.0",
+                    "Traitement et prévention des embolies pulm.: 2.0-3.0",
+                    "Fibrillation auriculaire:2.0-3.0",
+                    "Prothèse cardiaque métallique: 2.5-3.5"
+                  ]
+                },
+                {
+                  "NTE.1": "2",
+                  "NTE.2": "L",
+                  "NTE.3": "Contrôlé"
+                }
+              ],
+              "MSH": {
+                "MSH.1": "|",
+                "MSH.2": "^~\\&",
+                "MSH.3": {
+                  "HD.1": "FOXLAB-BIRON",
+                  "HD.2": "2.16.124.10.101.1.60.1.16.2050.1",
+                  "HD.3": "ISO"
+                },
+                "MSH.4": {
+                  "HD.1": "1000156552",
+                  "HD.2": "2.16.840.1.113883.4.273",
+                  "HD.3": "ISO"
+                },
+                "MSH.5": {
+                  "HD.1": "0301",
+                  "HD.2": "2.16.124.10.101.1.60.6.24",
+                  "HD.3": "ISO"
+                },
+                "MSH.7": {
+                  "TS.1": "20151112084931-0500"
+                },
+                "MSH.9": {
+                  "MSG.1": "ORU",
+                  "MSG.2": "R01",
+                  "MSG.3": "ORU_R01"
+                },
+                "MSH.10": "FOXLAB-BIRON-4306975-20151112084931",
+                "MSH.11": {
+                  "PT.1": "P",
+                  "PT.2": "T"
+                },
+                "MSH.12": {
+                  "VID.1": "2.5.1"
+                },
+                "MSH.15": "NE",
+                "MSH.18": "UNICODE UTF-8",
+                "MSH.19": {
+                  "CE.1": "fr-CA"
+                }
+              },
+              "SFT": {
+                "SFT.2": "FOXLAB vDSQ-1.0",
+                "SFT.3": "LABORATOIRE MÉDICAL BIRON",
+                "SFT.4": "2.16.124.10.101.1.60.1.16.2050.2",
+                "SFT.6": {
+                  "TS.1": "20150519"
+                }
+              }
+            },
+            "ORU_R01.SPECIMEN": null
+          }
+        ]
+      }
+
+    ]
+  }
+}
