@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+    <script type='text/javascript' src='lib/jquery.moreorless.js/jquery.moreorless.js'></script>
+    <script type='text/javascript' src='js/jquery.treeselect.js'></script>
+    <script type='text/javascript' src='js/jquery.chosentree.js'></script>
+    <link rel='stylesheet' type='text/css' href='lib/jquery.moreorless.js/moreorless.css' />
+    <link rel='stylesheet' type='text/css' href='css/treeselect.css' />
+    <link rel='stylesheet' type='text/css' href='css/chosen.css' />
+    <script type='text/javascript'>
+        jQuery(function() {
+            JSONObject = JSON.parse('{"id":"01","title":"Node 01","has_children":true,"level":1,"children":[{"id":"011","title":"Node 011","has_children":true,"level":2,"children":[{"id":"0111","title":"Node 0111","has_children":false,"level":3,"children":[]}]}]}');
+
+            $('div.chosentree').chosentree({
+                width: 500,
+                deepLoad: true,
+                load: function(node, callback) {
+                    callback(JSONObject);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="chosentree"></div>
+</body>
+</html>

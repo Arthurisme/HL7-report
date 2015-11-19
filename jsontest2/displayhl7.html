@@ -4,55 +4,18 @@
     <title>Display JSON data</title>
 </head>
 <body>
+Key name : <input type="text" id="myText" value="Mickey">
+
+<p>Click the button to display the Json of the value.</p>
+
+<button id="parsejason"  >Display</button>
+
+<p id="demo"></p>
+
 <div id="description">The JSON piece that return:</div>
 <div id="results">Json data here</div>
 </body>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-
-    function writeToDom(title, content) {
-        $("#results").html("<div class='header'>" + title + ":</div><div><pre>" + content + "</pre></div>");
-    }
-
-
-    $(document).ready(function(){
-        $.post("json_allpage.json",
-                function(data){
-                    var obj=jQuery.parseJSON(data);
-//                    $("#results2").html( JSON.stringify(obj,null,4) );
-
-
-//All page:
-//                    writeToDom('Formatted', JSON.stringify(obj, null, 4));
-
-
-//                    var obj_ORU_R01 =obj.ORU_R01
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01, null, 4));
-
-//                    var obj_ORU_R01_MSH =obj.ORU_R01.MSH
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_MSH, null, 4));
-//
-//                    var obj_ORU_R01_MSH_1 =obj.ORU_R01.MSH["MSH.1"]
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_MSH_1, null, 4));
-
-//                    var obj_ORU_R01_ORU_R01_PATIENT_RESULT =obj.ORU_R01["ORU_R01.PATIENT_RESULT"][0]
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_ORU_R01_PATIENT_RESULT, null, 4));
-
-//                    var obj_ORU_R01_PATIENT =obj.ORU_R01["ORU_R01.PATIENT_RESULT"][0]["ORU_R01.PATIENT"]
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_PATIENT, null, 4));
-
-                    var obj_ORU_R01_PATIENT_OBSERVATION =obj.ORU_R01["ORU_R01.PATIENT_RESULT"][0]["ORU_R01.ORDER_OBSERVATION"]
-                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_PATIENT_OBSERVATION, null, 4));
-
-
-//                    for(var i=0;i<obj.length;i++){
-//                        $("#results").append("Linux ID: "+obj[i].LinuxID).hide().fadeIn(500);
-//                        $("#results").append("<br>Linux Distribution: "+obj[i].LinuxDist).hide().fadeIn(500);
-//                        $("#results").append("<br>Company: "+obj[i].Company).hide().fadeIn(500);
-//                        $("#results").append("<br><hr>").hide().fadeIn(500);
-//                    }
-                });
-    });
-</script>
+<script type="text/javascript" src="jsonreturn.js"></script>
+<script type="text/javascript"></script>
 </html>
