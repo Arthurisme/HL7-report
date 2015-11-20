@@ -1,13 +1,14 @@
 
 
-var keyname1
+var keyLevel2
 var obj_all_list
-var objtoshow
+var returnsubset
 var BASE_NAME = "ORU_R01"
 
+
 function myFunction() {
-    keyname1 = document.getElementById("myText").value;
-    document.getElementById("demo").innerHTML = keyname1;
+    keyLevel2 = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = keyLevel2;
 }
 
 
@@ -16,48 +17,36 @@ function writeToDom(title, content) {
 }
 
 
+//using this methed after load the  json file to obj_all_list(in document.ready):
+function returnsubsetjson(obj,subsetname) {
+
+    var obj_subset =obj[subsetname]
+
+    subsetforreturn = obj_subset
+    return subsetforreturn
+
+}
+
+
+
 $(document).ready(function(){
-    $.post("json.hl7.json",
+    //  load the  json file to obj_all_list:
+    //$.post("json.hl7.json",
+        $.post("json_allpage.json",
         function(data){
             var obj=jQuery.parseJSON(data);
             obj_all_list = obj
 
-//                    $("#results2").html( JSON.stringify(obj,null,4) );
 
 
-//All page:
-//                    writeToDom('Formatted', JSON.stringify(obj, null, 4));
-
-
-//                    writeToDom('Formatted', JSON.stringify(objtoshow, null, 4));
-
-
-//
-//                    var obj_ORU_R01_MSH_1 =obj.ORU_R01.MSH["MSH.1"]
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_MSH_1, null, 4));
-
-//                    var obj_ORU_R01_ORU_R01_PATIENT_RESULT =obj.ORU_R01["ORU_R01.PATIENT_RESULT"][0]
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_ORU_R01_PATIENT_RESULT, null, 4));
-
-//                    var obj_ORU_R01_PATIENT =obj.ORU_R01["ORU_R01.PATIENT_RESULT"][0]["ORU_R01.PATIENT"]
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_PATIENT, null, 4));
-
-//                    var obj_ORU_R01_PATIENT_OBSERVATION =obj.ORU_R01["ORU_R01.PATIENT_RESULT"][0]["ORU_R01.ORDER_OBSERVATION"]
-//                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01_PATIENT_OBSERVATION, null, 4));
-
-
-//                    for(var i=0;i<obj.length;i++){
-//                        $("#results").append("Linux ID: "+obj[i].LinuxID).hide().fadeIn(500);
-//                        $("#results").append("<br>Linux Distribution: "+obj[i].LinuxDist).hide().fadeIn(500);
-//                        $("#results").append("<br>Company: "+obj[i].Company).hide().fadeIn(500);
-//                        $("#results").append("<br><hr>").hide().fadeIn(500);
-//                    }
         });
 
 
+
+
     $("#parsejason").click(function () {
-        keyname1 = document.getElementById("myText").value;
-        document.getElementById("demo").innerHTML = keyname1;
+        keyLevel2 = document.getElementById("myText").value;
+        document.getElementById("demo").innerHTML = keyLevel2;
 
 
 
@@ -67,14 +56,39 @@ $(document).ready(function(){
 //                    writeToDom('Formatted', JSON.stringify(obj_ORU_R01, null, 4));
 
 //                    var testjsname2 = "MSH"
-        var testjsname2 = keyname1
+        var subsetname = keyLevel2
+
+        //add OBX:
+        //obj_all_list[BASE_NAME]["ORU_R01.PATIENT_RESULT"][0]["ORU_R01.ORDER_OBSERVATION"][0][ "ORU_R01.OBSERVATION"]
+
+        //var obj_subset =obj_all_list[BASE_NAME][subsetname]
+
+        level1name = "ORU_R01"
+        level2name = "ORU_R01.PATIENT_RESULT"
+        level3name = 0
+        level4name = "ORU_R01.ORDER_OBSERVATION"
+        level5name = 0
+        level6name = "ORU_R01.OBSERVATION"
+
+        returnsubset1= returnsubsetjson(obj_all_list,level1name)
+        returnsubset2= returnsubsetjson(returnsubset1,level2name)
+        returnsubset3= returnsubsetjson(returnsubset2,level3name)
+        returnsubset4= returnsubsetjson(returnsubset3,level4name)
+        returnsubset5= returnsubsetjson(returnsubset4,level5name)
+        returnsubset6= returnsubsetjson(returnsubset5,level6name)
 
 
-        var obj_ORU_R01_MSH =obj_all_list[BASE_NAME][testjsname2]
 
-        objtoshow = obj_ORU_R01_MSH
+        //for all obx in a file:
+        //if (keyLevel2 == "OBX")
+        //{
+        //    var obj_OBX_all_lists =obj_all_list[BASE_NAME]["ORU_R01.PATIENT_RESULT"][0]["ORU_R01.ORDER_OBSERVATION"][0]
+        //    returnsubset = obj_OBX_all_lists
+        //
+        //}
+        returnsubset = returnsubset6
 
-        writeToDom('Formatted', JSON.stringify(objtoshow, null, 4));
+        writeToDom('Formatted', JSON.stringify(returnsubset, null, 4));
 
 
 

@@ -53,7 +53,7 @@
       {
         "ORU_R01.PATIENT": {
           "PID": {
-            "PID.1": "1",
+            "PID.1": "one1",
             "PID.3": {
               "CX.1": "P0059257",
               "CX.4": {
@@ -84,7 +84,7 @@
         "ORU_R01.ORDER_OBSERVATION": [
           {
             "ORC": {
-              "ORC.1": "RE",
+              "ORC.1": "1-1-RE",
               "ORC.4": {
                 "EI.1": "4296550",
                 "EI.2": "FOXLAB-BIRON",
@@ -588,7 +588,7 @@
           },
           {
             "OBR": {
-              "OBR.1": "2",
+              "OBR.1": "one-2-2",
               "OBR.3": {
                 "EI.1": "46902417",
                 "EI.2": "FOXLAB-BIRON",
